@@ -6,6 +6,12 @@ settings:
 
 catalogs:
   default:
+    '@vitest/runner':
+      specifier: ~2.1.3
+      version: 2.1.3
+    '@vitest/snapshot':
+      specifier: ~2.1.3
+      version: 2.1.3
     '@vitest/ui':
       specifier: ~2.1.3
       version: 2.1.3
@@ -1696,6 +1702,12 @@ importers:
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
+      deep-diff:
+        specifier: ^1.0.2
+        version: 1.0.2
+      diff:
+        specifier: ^1.1.1
+        version: 1.4.0
       esbuild:
         specifier: 0.17.19
         version: 0.17.19
@@ -1779,6 +1791,12 @@ importers:
       '@types/command-exists':
         specifier: ^1.2.0
         version: 1.2.0
+      '@types/deep-diff':
+        specifier: ^1.0.5
+        version: 1.0.5
+      '@types/diff':
+        specifier: ^6.0.0
+        version: 6.0.0
       '@types/express':
         specifier: ^4.17.13
         version: 4.17.13
@@ -3617,12 +3635,18 @@ packages:
   '@types/debug@4.1.7':
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
 
+  '@types/deep-diff@1.0.5':
+    resolution: {integrity: sha512-PQyNSy1YMZU1hgZA5tTYfHPpUAo9Dorn1PZho2/budQLfqLu3JIP37JAavnwYpR1S2yFZTXa3hxaE4ifGW5jaA==}
+
   '@types/deepmerge@2.2.0':
     resolution: {integrity: sha512-FEQYDHh6+Q+QXKSrIY46m+/lAmAj/bk4KpLaam+hArmzaVpMBHLcfwOH2Q2UOkWM7XsdY9PmZpGyPAjh/JRGhQ==}
     deprecated: This is a stub types definition. deepmerge provides its own type definitions, so you do not need this installed.
 
   '@types/degit@2.8.6':
     resolution: {integrity: sha512-y0M7sqzsnHB6cvAeTCBPrCQNQiZe8U4qdzf8uBVmOWYap5MMTN/gB2iEqrIqFiYcsyvP74GnGD5tgsHttielFw==}
+
+  '@types/diff@6.0.0':
+    resolution: {integrity: sha512-dhVCYGv3ZSbzmQaBSagrv1WJ6rXCdkyTcDyoNu1MD8JohI7pR7k8wdZEm+mvdxRKXyHVwckFzWU1vJc+Z29MlA==}
 
   '@types/dns2@2.0.3':
     resolution: {integrity: sha512-sO14jUYelc2DzwHcCbwp7tZsZfB2x17/zIdHCAeUBINAz2cc36iVFLqCPCB7rn73CzoyoCmpkEnh1rA8C0puPw==}
@@ -4763,6 +4787,9 @@ packages:
     resolution: {integrity: sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==}
     engines: {node: '>=10'}
 
+  deep-diff@1.0.2:
+    resolution: {integrity: sha512-aWS3UIVH+NPGCD1kki+DCU9Dua032iSsO43LqQpcs4R3+dVv7tX0qBGjiVHJHjplsoUM2XRO/KB92glqc68awg==}
+
   deep-eql@5.0.2:
     resolution: {integrity: sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q==}
     engines: {node: '>=6'}
@@ -4864,6 +4891,10 @@ packages:
 
   devtools-protocol@0.0.1182435:
     resolution: {integrity: sha512-EmlkWb62wSbQNE1gRZZsi4KZYRaF5Skpp183LhRU7+sadKR06O1dHCjZmFSEG6Kv7P6S/UYLxcY3NlYwqKM99w==}
+
+  diff@1.4.0:
+    resolution: {integrity: sha512-VzVc42hMZbYU9Sx/ltb7KYuQ6pqAw+cbFWVy4XKdkuEL2CFaRLGEnISPs7YdzaUGpi+CpIqvRmu7hPQ4T7EQ5w==}
+    engines: {node: '>=0.3.1'}
 
   diff@4.0.2:
     resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
@@ -10507,11 +10538,15 @@ snapshots:
     dependencies:
       '@types/ms': 0.7.31
 
+  '@types/deep-diff@1.0.5': {}
+
   '@types/deepmerge@2.2.0':
     dependencies:
       deepmerge: 4.3.1
 
   '@types/degit@2.8.6': {}
+
+  '@types/diff@6.0.0': {}
 
   '@types/dns2@2.0.3':
     dependencies:
@@ -11827,6 +11862,8 @@ snapshots:
     dependencies:
       mimic-response: 3.1.0
 
+  deep-diff@1.0.2: {}
+
   deep-eql@5.0.2: {}
 
   deep-extend@0.6.0: {}
@@ -11911,6 +11948,8 @@ snapshots:
   devalue@4.3.2: {}
 
   devtools-protocol@0.0.1182435: {}
+
+  diff@1.4.0: {}
 
   diff@4.0.2: {}
 
