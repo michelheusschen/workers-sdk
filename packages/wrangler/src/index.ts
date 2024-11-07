@@ -58,7 +58,6 @@ import { APIError, formatMessage, ParseError } from "./parse";
 import { pipelines } from "./pipelines";
 import { pubSubCommands } from "./pubsub/pubsub-commands";
 import { queues } from "./queues/cli/commands";
-import { r2 } from "./r2";
 import { secret, secretBulkHandler, secretBulkOptions } from "./secret";
 import {
 	addBreadcrumb,
